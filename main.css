@@ -103,18 +103,33 @@ body{
     width: 100%;
     height: auto;
 
-    margin-bottom: 1.7em;
+    padding-top: 1em;
+    overflow: auto; /* 자식요소 마진값 부모블록 범위 인정 */
+}
+#main > header:first-child{
+    padding-top: 0;
 }
 
 header > h1{
     margin-bottom: 1.7em;
 }
-.section > h1, .section > h2{
+.section > h2{
     margin-bottom: 0.4em;
 }
 .section > hr{
     margin-bottom: 0.7em;
 }
-.section > p, .section > pre, .section > blockquote{
+.section > p, .section > pre{
     margin-bottom: 1em;
+}
+.section > blockquote{
+    margin-bottom: 1em;
+    padding-left: 10px;
+    border-left: 4px solid lightseagreen;
+    color: lightslategray;
+}
+blockquote > code, p > code{
+    background-color: lightgray;
+    border-radius: 3px;
+    padding: 0 2px;
 }
