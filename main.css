@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+pre > code.hljs{
+    padding: 1.1em;
+    font-family: 'Menlo';
+    overflow: auto;
+}
 html{
     font-size: 16px;
     width: 100%;
@@ -80,8 +85,6 @@ body{
     height: auto;
 
     margin: 0 1.5em;
-
-    background-color: pink;
 }
 #nav_list{
     width: 20%;
@@ -92,4 +95,13 @@ body{
     margin-right: 1.5em;
 
     background-color: lightblue;
+}
+
+/* 디자인 */
+
+#main > header, #main > div{
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 1.5em;
 }
