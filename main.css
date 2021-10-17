@@ -103,5 +103,18 @@ body{
     width: 100%;
     height: auto;
 
-    margin-bottom: 1.5em;
+    margin-bottom: 1.7em;
+}
+
+header > h1{
+    margin-bottom: 1.7em;
+}
+.section > h1, .section > h2{
+    margin-bottom: 0.4em;
+}
+.section > hr{
+    margin-bottom: 0.7em;
+}
+.section > p, .section > pre, .section > blockquote{
+    margin-bottom: 1em;
 }
