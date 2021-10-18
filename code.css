@@ -1,0 +1,41 @@
+.hljs{
+    display:block;
+    color:#CFD2D1;
+    padding:0.5em;
+}
+
+.hljs-function{color:#56B5DB;}
+.hljs-quote{color:#41535C;}
+.hljs-section{color:#56B5DB;}
+.hljs-builtin-name{color: #A074C4;}
+.hljs-type{color:#56B5DB;}
+.hljs-string{color:#8DDEFE;}
+.hljs-keyword{color:#E6CD69;}
+.hljs-template-variable{color:#3A9991;}
+.hljs-regexp{color:#3A9991;}
+.hljs-number{color: #CD4045;}
+.hljs-strong{font-weight:bold;}
+.hljs-deletion{color:#3A9991;}
+.hljs-name{color:#3A9991;}
+.hljs-attribute{color:#3A9991;}
+.hljs-comment{color:#41535C;}
+.hljs-addition{color:#8DDEFE;}
+.hljs-params{color:#56B5DB;}
+.hljs-selector-id{color:#3A9991;}
+.hljs-emphasis{font-style:italic;}
+.hljs-selector-tag{color:#E6CD69;}
+.hljs-selector-class{color:#3A9991;}
+.hljs-symbol{color:#8DDEFE;}
+.hljs-literal{color: #A074C4;}
+.hljs-class{color:#56B5DB;}
+.hljs-variable{color:#3A9991;}
+.hljs-meta{color:#149b93;}
+.hljs-link{color:#3A9991;}
+.hljs-built_in{color: #A074C4;}
+.hljs-bullet{color:#8DDEFE;}
+.hljs-title{color:#56B5DB;}
+.hljs-tag{color:#3A9991;}
+
+
+
+

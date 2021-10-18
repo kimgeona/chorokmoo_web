@@ -1,0 +1,50 @@
+html{
+    font-size: 16px;
+    font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+}
+
+
+/* 소스코드 스타일 */
+pre > code.hljs{
+    padding: 1.1em;
+    font-family: 'Menlo';
+    font-size: 1vw; /* 임시방편, code 내용이 overflow 되면 box width 비율 계산에 이상 생김 -> 현재 overflow 안되게만 임시 조치 한 상태임*/
+    overflow: auto;
+}
+
+
+/* 블럭 디테일 디자인 */
+#main > header, #main > div{
+    width: 100%;
+    height: auto;
+
+    padding-top: 1em;
+    overflow: auto; /* 자식요소 마진값 부모블록 범위 인정 */
+}
+#main > header:first-child{
+    padding-top: 0;
+}
+
+header > h1{
+    margin-bottom: 1.7em;
+}
+.section > h2{
+    margin-bottom: 0.4em;
+}
+.section > hr{
+    margin-bottom: 0.7em;
+}
+.section > p, .section > pre{
+    margin-bottom: 1em;
+}
+.section > blockquote{
+    margin-bottom: 1em;
+    padding-left: 10px;
+    border-left: 4px solid lightseagreen;
+    color: lightslategray;
+}
+blockquote > code, p > code{
+    background-color: lightgray;
+    border-radius: 3px;
+    padding: 0 2px;
+}

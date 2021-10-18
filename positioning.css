@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 포지셔닝, 사이즈조정 -- #top */
+#top{
+    width: 100%;
+    height: 60px;
+    max-width: 1440px;
+
+    margin: 0 auto;
+    padding: 0 1.5em;
+
+    border-bottom: 0.2em solid gray;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title, #nav_things{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#nav_things > h4{
+    margin-left: 1.5em;
+}
+
+/* 포지셔닝, 사이즈조정 -- #center */
+#center{
+    width: 100%;
+    height: auto;
+    max-width: 1440px;
+    min-height: calc(100vh - 60px);
+
+    margin: 2em auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#info, #nav_list{
+    position: -webkit-sticky;
+    position: sticky;
+    top: calc(60px - 2em);
+}
+#info{
+    width: 20%;
+    height: auto;
+    min-width: 200px;
+    min-height: 400px;
+
+    margin-left: 1.5em;
+}
+#main{
+    width: 60%;
+    height: auto;
+    min-height: 700px;
+
+    margin: 0 1.5em;
+}
+#nav_list{
+    width: 20%;
+    height: auto;
+    min-width: 200px;
+    min-height: 400px;
+
+    margin-right: 1.5em;
+}
