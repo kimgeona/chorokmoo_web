@@ -8,7 +8,7 @@ html{
 pre > code.hljs{
     padding: 1.1em;
     font-family: 'Menlo';
-    font-size: 1vw; /* 임시방편, code 내용이 overflow 되면 box width 비율 계산에 이상 생김 -> 현재 overflow 안되게만 임시 조치 한 상태임*/
+    font-size: 1.2vw; /* 임시방편, code 내용이 overflow 되면 box width 비율 계산에 이상 생김 -> 현재 overflow 안되게만 임시 조치 한 상태임*/
     overflow: auto;
 }
 @media screen and (max-width:1120px){
@@ -21,6 +21,16 @@ pre > code.hljs{
         font-size: 2.3vw;
     }
 }
+
+/* 프로필(info) 디자인 */
+#info_card > div{
+    font-size: 1.3em;
+}
+#info_card > div > p{
+    font-size: 16px;
+}
+
+
 /* 네비게이션(앵커) 디자인 */
 .section_nav{
     overflow-y: auto;
@@ -39,8 +49,6 @@ pre > code.hljs{
 .section_nav > a:first-child{
     text-align: center;
 }
-
-
 
 
 

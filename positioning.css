@@ -54,6 +54,8 @@ html, body{
         flex-direction: column;
         justify-content: start;
         align-items: stretch;
+
+        margin-top: 1em;
     }
 }
 
@@ -63,27 +65,50 @@ html, body{
     top: calc(60px - 2em);
 }
 #info{
-    width: 20%;
-    height: auto;
+    width: 15%;
+    height: calc(100vh - 2em + 0.2em);
     min-width: 200px;
-    min-height: 400px;
 
     margin-left: 1.5em;
+
+    border-right: 2px dotted lightgray;
+}
+#info_card{
+    width: auto;
+    padding: 0.75em 0.3em;
+}
+#info_card > h5, #info_card > hr{
+    margin-bottom: 0.5em;
 }
 @media screen and (max-width:1120px){
     #info{
         width: calc(100% - 3em);
+        height: auto;
         min-width: none;
-        min-height: 200px;
     
         margin: 0 1.5em;
+
+        border-right: none;
+        border-bottom: 2px dotted lightgray;
 
         position: static;
         top: none;
     }
+    #info_card{
+        display: flex;
+        flex-direction: row;
+        justify-items:self-start;
+
+        padding-bottom: 1.7em;
+    }
+    #info_card > div{
+        margin-right: 2em;
+    }
 }
+
+
 #center_m{
-    width: 80%;
+    width: 85%;
     height: auto;
 
     margin: 0 1.5em;
@@ -128,11 +153,17 @@ html, body{
     height: auto;
     min-width: 200px;
 }
+@media screen and (max-width:1120px){
+    #nav_list{
+        margin-top: 2em;
+    }
+}
 @media screen and (max-width:880px){
     #nav_list{
         width: 100%;
-        padding-top: 2em;
-        
+
+        margin-top: 0.7em;
+
         position: static;
         top: none;
     }
