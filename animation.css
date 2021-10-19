@@ -6,12 +6,34 @@
 }
 
 @keyframes rainbow_power_border {
-    from{border-color: red;}
-    15%{border-color: orange;}
-    30%{border-color: yellow;}
-    45%{border-color: green;}
-    60%{border-color: blue;}
-    75%{border-color: navy;}
-    90%{border-color: purple;}
-    to{border-color: red;}
+    from{border-color: rgb(250, 125, 125);}
+    15%{border-color: rgb(255, 204, 110);}
+    30%{border-color: rgb(240, 240, 111);}
+    45%{border-color: rgb(118, 235, 118);}
+    60%{border-color: rgb(134, 134, 255);}
+    75%{border-color: rgb(106, 106, 209);}
+    90%{border-color: rgb(175, 94, 175);}
+    to{border-color: rgb(250, 125, 125);}
 }
+
+#info_card > div h5:hover,
+#info_card > div h6:hover,
+#info_card > div > p code:hover,
+#top h3:hover,
+#top > div h4:hover,
+#nav_list > div > a:hover{
+    color: rgb(45, 45, 45);
+}
+
+/* 미완성
+#nav_list > div > a:hover{
+    animation-name: select;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes select {
+    from{color: rgb(120, 120, 120);}
+    to{color: rgb(45, 45, 45);}
+}
+*/

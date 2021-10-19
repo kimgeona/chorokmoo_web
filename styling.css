@@ -3,6 +3,10 @@ html{
     font-family: -apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
     scroll-behavior: smooth;
 }
+/* 글씨 색상*/
+#info_card > div, #top, #nav_list > div > a{
+    color: rgb(120, 120, 120);
+}
 
 /* 소스코드 스타일 - (Seti) designed by "Codye" */
 pre > code.hljs{
@@ -24,6 +28,7 @@ pre > code.hljs{
 
 /* 프로필(info) 디자인 */
 #info_card > div{
+    color: rgb(120, 120, 120);
     font-size: 1.3em;
 }
 #info_card > div > p{
