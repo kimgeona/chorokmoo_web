@@ -11,9 +11,14 @@ pre > code.hljs{
     font-size: 1vw; /* 임시방편, code 내용이 overflow 되면 box width 비율 계산에 이상 생김 -> 현재 overflow 안되게만 임시 조치 한 상태임*/
     overflow: auto;
 }
-@media screen and (max-width:1120px) and (min-width:800px){
+@media screen and (max-width:1120px){
     pre > code.hljs{
         font-size: 1.5vw;
+    }
+}
+@media screen and (max-width:880px){
+    pre > code.hljs{
+        font-size: 2.3vw;
     }
 }
 /* 네비게이션(앵커) 디자인 */
