@@ -1,4 +1,4 @@
-#top{
+#top, footer{
     animation-name: rainbow_power_border;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -21,7 +21,7 @@
 #info_card > div > p code:hover,
 #top h3:hover,
 #top > div h4:hover,
-#nav_list > div > a:hover{
+#nav_list > div > a:hover, footer > a:hover{
     color: rgb(45, 45, 45);
 }
 
