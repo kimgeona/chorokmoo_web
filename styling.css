@@ -25,6 +25,11 @@ pre > code.hljs{
         font-size: 2.3vw;
     }
 }
+@media screen and (min-width:1245px) {
+    pre > code.hljs{
+        font-size: 15px;
+    }
+}
 
 /* 프로필(info) 디자인 */
 #info_card > div{
@@ -69,7 +74,7 @@ pre > code.hljs{
     padding-top: 0;
 }
 
-header > h1{
+.section > h1{
     margin-bottom: 1.7em;
 }
 .section > h2{
@@ -87,8 +92,18 @@ header > h1{
     border-left: 4px solid lightseagreen;
     color: lightslategray;
 }
+blockquote > a{
+    margin: 0;
+    padding: 0;
+    color: lightslategray;
+}
+
 blockquote > code, p > code{
     background-color: lightgray;
     border-radius: 3px;
     padding: 0 2px;
+}
+
+p > blockquote{
+    display: inline-block;
 }
