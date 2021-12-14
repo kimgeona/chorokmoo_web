@@ -171,6 +171,61 @@ $ ros2 interface proto [인터페이스 이름]</code></pre>
                     <p><code>interface show</code>는 해당 인터페이스의 기본 "정의형"을 보여줍니다.</p>
                     <p><code>interface proto</code>는 해당 인터페이스의 기본형에 기반한 실제 코드를 보여줍니다.</p>
                 </div>
+                <div id="section_9" class="section">
+                    <h2>명령어 - service</h2>
+                    <hr>
+                    <p><code>service</code>는 노드 간 양방향 통신을 할 때 사용되는 방법입니다. 요청을 보내는 쪽을 Service Client, 요청을 받아 일을 처리하는 쪽을 Service Server라고 합니다.</p>
+                    <pre><code class="hljs" style="background:#151718;border-radius:8px">$ ros2 service list
+                    
+$ ros2 service type [서비스 이름]
+
+$ ros2 service find [서비스 인터페이스]
+
+$ ros2 service call [서비스 이름] [서비스 인터페이스] [인터페이스에 사용되는 값]</code></pre>
+                    <p><code>service list</code>는 현재 실행중인 노드들의 서비스 목록을 보여줍니다. 옵션 <code>-t</code>를 붙여주면 서비스 형태(srv 인터페이스)도 보여줍니다.</p>
+                    <p><code>service type</code>은 해당 서비스의 인터페이스(srv 인터페이스)를 보여줍니다.</p>
+                    <p><code>service find</code>는 해당 서비스 형태에 해당하는 서비스들을 보여줍니다.</p>
+                    <p><code>service call</code>은 서비스 서버에게 요청을 보내는 일을 해줍니다. 인터페이스에 사용되는 값은 위에 나와져 있는 <code>interface show</code>, <code>interface proto</code>명령어를 통해 정확한 사용법을 알아 볼 수 있습니다.</p>
+                </div>
+                <div id="section_10" class="section">
+                    <h2>명령어 - action</h2>
+                    <hr>
+                    <p><code>action</code>은 비동기식 + 동기식으로 양방향으로 통신 할 때 사용되는 방법입니다.</p>
+                    <blockquote>참고 <a href="https://cafe.naver.com/openrt/24128">011 ROS 2 액션 (action)</a></blockquote>
+                    <pre><code class="hljs" style="background:#151718;border-radius:8px">$ ros2 action info [액션 이름]
+
+$ ros2 action list
+                        
+$ ros2 action send_goal [액션 이름] [액션 인터페이스] [gaol 값]</code></pre>
+                    <p><code>action info</code>는 액션의 정보를 보여줍니다.</p>
+                    <p><code>action list</code>는 현재 사용가능한 액션 목록을 보여줍니다. 옵션 <code>-t</code>를 붙여주면 액션의 형태(인터페이스)도 같이 보여줍니다.</p>
+                    <p><code>action send_goal</code>은 액션을 실행해줍니다. gaol 값은 위에 나와져 있는 <code>interface show</code>, <code>interface proto</code>명령어를 통해 정확한 사용법을 알아 볼 수 있습니다.</p>
+                </div>
+                <div id="section_11" class="section">
+                    <h2>명령어 - param</h2>
+                    <hr>
+                    <p><code>param</code>은 파라미터 관련 작업을 수행합니다</p>
+                    <pre><code class="hljs" style="background:#151718;border-radius:8px">$ ros2 param list
+                    
+$ ros2 param describe [파라미터 이름]
+
+$ ros2 param get [파라미터 이름]
+
+$ ros2 param set [파라미터 이름]</code></pre>
+                    <p><code>param list</code>는 각각 노드들의 파라미터들을 보여줍니다.</p>
+                    <p><code>param describe</code>는 파라미터 내용을 확인시켜줍니다.</p>
+                    <p><code>param get</code>은 파라미터의 저장된 내용을 보여줍니다.</p>
+                    <p><code>param set</code>은 파라미터 값을 설정해줍니다.</p>
+                    <pre><code class="hljs" style="background:#151718;border-radius:8px">$ ros2 param dump [노드 이름]
+                    
+$ ros2 run [패키지 이름] [노드 이름] --ros-args --params-file [.yaml 파일 주소]
+
+$ ros2 param load [노드 이름] [.yaml 파일 주소]</code></pre>
+                    <p><code>param dump</code>는 노드에 설정되어 있는 파라미터 값을 저장해줍니다. 저장되어 있는 파라미터 값으로 노드를 실행하고 싶다면, 노드를 run 할때 <code>--ros-args --params-file [.yaml 파일 주소]</code>을 옵션값으로 추가해주면 됩니다.</p>
+                    <p><code>param load</code>는 현재 실행되어 있는 노드에 파라미터를 적용시켜줍니다.</p>
+                    <pre><code class="hljs" style="background:#151718;border-radius:8px">$ ros2 param delete [파라미터 이름]</code></pre>
+                    <p><code>param delete</code>는 해당 파라미터를 삭제해줍니다.</p>
+                </div>
             </div>
             <div id="nav_list">
                 <div class="section_nav">
@@ -183,6 +238,9 @@ $ ros2 interface proto [인터페이스 이름]</code></pre>
                     <a href="#section_6">명령어 - topic</a>
                     <a href="#section_7">명령어 - bag</a>
                     <a href="#section_8">명령어 - interface</a>
+                    <a href="#section_9">명령어 - service</a>
+                    <a href="#section_10">명령어 - action</a>
+                    <a href="#section_11">명령어 - param</a>
                 </div>
             </div>
         </div>
